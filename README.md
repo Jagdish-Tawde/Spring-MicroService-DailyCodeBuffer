@@ -13,4 +13,4 @@ Created Eureka server as Service-Registry (we can register multiple services in 
 
 
 First Hit will come on Cloud-Gateway and it will pass to Department or User according to the url path are mention in # application.yml 
-file
+file.....
