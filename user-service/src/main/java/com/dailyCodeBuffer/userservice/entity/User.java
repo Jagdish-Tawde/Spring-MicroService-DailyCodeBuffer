@@ -14,12 +14,12 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userId;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private Long departmentId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Long userId;
 
+  private String firstName;
+  private String lastName;
+  private String email;
+  private Long departmentId;
 }

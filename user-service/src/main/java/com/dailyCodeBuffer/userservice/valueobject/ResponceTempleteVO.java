@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ResponceTempleteVO {
 
-    private User user;
-    private Department department;
-
+  private User user;
+  private Department department;
 }

@@ -15,20 +15,20 @@ public class Controller {
     private UserService userService;
 
     @PostMapping
-    public User saveUser(@RequestBody User user){
+    public User saveUser(@RequestBody User user) {
         log.info("save user inside controller");
         return userService.saveUser(user);
     }
 
     @GetMapping("/{id}")
-    public User findByUserId(@PathVariable("id") Long userId){
+    public User findByUserId(@PathVariable("id") Long userId) {
         return userService.findByuserId(userId);
     }
 
     @GetMapping("/userid/{id}")
-    public ResponceTempleteVO getUserWithDepartment(@PathVariable("id") Long userId){
+    public ResponceTempleteVO getUserWithDepartment(@PathVariable("id") Long userId) {
 
-        return  userService.getUserWithDepartment(userId);
+        return userService.getUserWithDepartment(userId);
     }
 
 }
